@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://anasibnouali.github.io/sitemap.xml
+
+# Disallow certain files
+Disallow: /Scripts/
+Disallow: /Styles/
+Disallow: /*.css$
+Disallow: /*.js$
+
+# Allow important resources
+Allow: /Images/
+Allow: /docs/
+
+# Crawl delay (optional)
+Crawl-delay: 1

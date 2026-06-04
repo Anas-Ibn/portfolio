@@ -1,0 +1,40 @@
+{
+    "name": "Portfolio Anas Ibnouali - Data Scientist",
+    "short_name": "Portfolio Anas",
+    "description": "Portfolio professionnel d'Anas Ibnouali, Data Scientist spécialisé en Machine Learning et IA",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0a0a",
+    "theme_color": "#00d4ff",
+    "orientation": "portrait-primary",
+    "categories": ["portfolio", "data-science", "technology"],
+    "lang": "fr",
+    "icons": [
+        {
+            "src": "Images/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "Images/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "Images/screenshot-desktop.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide"
+        },
+        {
+            "src": "Images/screenshot-mobile.png",
+            "sizes": "375x667",
+            "type": "image/png",
+            "form_factor": "narrow"
+        }
+    ]
+}

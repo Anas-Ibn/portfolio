@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'Anas Ibnouali - Data Scientist & ML Engineer spécialisé en Machine Learning, IA et visualisation de données. Étudiant à l'IUT de Vannes.">
+    <meta name="keywords" content="Data Science, Machine Learning, IA, Python, R, Portfolio, Anas Ibnouali, Analyste données">
+    <meta name="author" content="Anas Ibnouali">
+    <meta property="og:title" content="Portfolio - Anas Ibnouali | Data Scientist & ML Engineer">
+    <meta property="og:description" content="Data Scientist passionné par l'IA et l'analyse de données. Découvrez mes projets et compétences.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Images/photo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#00d4ff">
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    <title>Portfolio - Anas Ibnouali | Data Scientist & ML Engineer</title>
+
+    <link rel="preload" href="Styles/styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="Scripts/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Anas Ibnouali",
+        "jobTitle": "Data Scientist",
+        "description": "Étudiant en Data Science à l'IUT de Vannes, spécialisé en Machine Learning et IA",
+        "url": "https://anasibnouali.github.io",
+        "sameAs": [
+            "https://github.com/anasibnouali",
+            "https://www.linkedin.com/in/anasibnouali/"
+        ],
+        "email": "anasibnouali2018@gmail.com",
+        "alumniOf": "IUT de Vannes",
+        "knowsAbout": ["Data Science", "Machine Learning", "Python", "R", "SQL", "Power BI"]
+    }
+    </script>
+</head>
+<body>
+
+<div class="neon-sidebar"></div>
+
+<header>
+    <div class="hero-bg">
+        <div class="hero-grid"></div>
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+    </div>
+
+    <div class="header-content">
+        <div class="profile-picture">
+            <div class="profile-glow"></div>
+            <img src="Images/photo.png" alt="Anas Ibnouali" class="profile-img">
+        </div>
+
+        <h1 class="header-title">Anas Ibnouali</h1>
+
+        <div class="title-animation">
+            <span class="typing-text" id="typingText"></span><span class="cursor">|</span>
+        </div>
+
+        <p class="bio">
+            Étudiant en Data Science à l'IUT de Vannes, passionné par l'intelligence artificielle et l'analyse des données.
+            Je transforme des données complexes en insights actionnables et en solutions innovantes pour résoudre des défis métier concrets.
+        </p>
+
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number" data-target="5">0</span>
+                <span class="stat-label">Projets</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="20">0</span>
+                <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="2">0</span>
+                <span class="stat-label">Années d'études</span>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://github.com/anasibnouali" class="icon" aria-label="GitHub" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i>
+                <span class="tooltip">GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/anasibnouali/" class="icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin"></i>
+                <span class="tooltip">LinkedIn</span>
+            </a>
+            <a href="mailto:anasibnouali2018@gmail.com" class="icon" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+                <span class="tooltip">Email</span>
+            </a>
+        </div>
+
+        <div class="cta-buttons">
+            <a href="#contact" class="btn primary-btn">
+                <i class="fas fa-envelope"></i>
+                Me contacter
+            </a>
+            <a href="#projets" class="btn secondary-btn">
+                <i class="fas fa-rocket"></i>
+                Mes projets
+            </a>
+        </div>
+
+        <div class="badge-available">
+            <span class="badge-pulse"></span>
+            <i class="fas fa-bolt"></i>
+            Disponible pour stage / alternance
+        </div>
+    </div>
+
+    <div class="scroll-indicator">
+        <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll</span>
+    </div>
+</header>
+
+<nav class="navbar" id="navbar">
+    <div class="logo">
+        <a href="#" class="logo-text">AI</a>
+    </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">
+        <span></span>
+    </label>
+    <ul class="nav-menu">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+            <a href="docs/CV_ALTERNANCE (2)" class="cv-download" download target="_blank">
+                CV <i class="fas fa-download"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<main>
+    <!-- ===================== À PROPOS ===================== -->
+    <section id="about" class="section">
+        <h2 class="section-title"><span>À propos de moi</span></h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Je suis un <strong>Data Scientist</strong> passionné par l'exploration des données et la création de modèles d'apprentissage automatique robustes. Mon objectif est de résoudre des problèmes complexes en utilisant des techniques avancées d'analyse de données et d'intelligence artificielle pour générer un impact métier réel.</p>
+                <p>Actuellement étudiant à l'<strong>IUT de Vannes</strong> en BUT Sciences des Données option VCOD, je combine théorie académique et projets pratiques pour développer une expertise complète. J'ai un intérêt particulier pour les systèmes de recommandation, l'analyse prédictive, le NLP et l'IA générative.</p>
+                <p><em>"Les données racontent une histoire, mon rôle est de la découvrir et de la rendre accessible pour prendre les meilleures décisions."</em></p>
+
+                <div class="key-points">
+                    <div class="key-point">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Formation</h3>
+                        <p>BUT Sciences des Données · option VCOD — IUT de Vannes</p>
+                    </div>
+                    <div class="key-point">
+                        <i class="fas fa-brain"></i>
+                        <h3>Expertise</h3>
+                        <p>Machine Learning, Analyse de données, IA Générative, Visualisation</p>
+                    </div>
+                    <div class="key-point">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Objectif</h3>
+                        <p>Créer des solutions data-driven pour résoudre des problèmes concrets à fort impact</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== COMPÉTENCES ===================== -->
+    <section id="competences" class="section">
+        <h2 class="section-title"><span>Compétences Techniques</span></h2>
+
+        <div class="skills-advanced-grid">
+            <div class="skills-block">
+                <h3><i class="fas fa-code"></i> Langages & Outils Data</h3>
+                <ul>
+                    <li><b>Python</b> — Pandas, NumPy, Scikit-learn, Selenium, BeautifulSoup</li>
+                    <li><b>R</b> — RStudio, Shiny, ggplot2, dplyr, FactoMineR</li>
+                    <li><b>SQL</b> — PostgreSQL, MySQL, Oracle, SQL Spatiale</li>
+                    <li><b>SAS</b>, VBA, Power Query</li>
+                </ul>
+            </div>
+            <div class="skills-block">
+                <h3><i class="fas fa-brain"></i> Machine Learning & IA</h3>
+                <ul>
+                    <li>Régression, Classification, Clustering, ACP/AFC</li>
+                    <li>LLM, RAG, Prompt Engineering (OpenAI, Gemini, LangChain)</li>
+                    <li>Arbres de décision, Data Mining, Text Mining</li>
+                </ul>
+            </div>
+            <div class="skills-block">
+                <h3><i class="fas fa-database"></i> Data Engineering & ETL</h3>
+                <ul>
+                    <li>Talend, Power Query — pipelines ETL, intégration multi-sources</li>
+                    <li>Nettoyage, enrichissement, structuration & automatisation</li>
+                </ul>
+            </div>
+            <div class="skills-block">
+                <h3><i class="fas fa-server"></i> Développement Web & API</h3>
+                <ul>
+                    <li>Flask, HTML5, CSS3, JavaScript (ES6+)</li>
+                    <li>API REST — création, intégration & sécurisation</li>
+                </ul>
+            </div>
+            <div class="skills-block">
+                <h3><i class="fas fa-chart-bar"></i> DataViz & Reporting</h3>
+                <ul>
+                    <li>QlikSense, Power BI (DAX, dashboards dynamiques), R Shiny, QGIS</li>
+                    <li>Excel avancé (PowerPivot, VBA), Matplotlib, Plotly, ggplot2</li>
+                </ul>
+            </div>
+            <div class="skills-block">
+                <h3><i class="fas fa-tools"></i> DevOps & Gestion</h3>
+                <ul>
+                    <li>Git (versionnage), Docker, automatisation</li>
+                    <li>Scrum / Agile, documentation technique, gestion de projet</li>
+                    <li>Web scraping avancé (Selenium, OCR)</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3 class="skills-subtitle">Data Science & Machine Learning</h3>
+        <div class="skills-cards-grid">
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                <h4 class="skill-title">Machine Learning</h4>
+                <div class="skill-badge">Avancé</div>
+                <p class="skill-desc">Classification, Régression, Clustering, Deep Learning</p>
+                <div class="skill-progress"><div class="skill-progress-fill" style="--fill: 0.85" data-fill="0.85"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                <h4 class="skill-title">Data Visualization</h4>
+                <div class="skill-badge">Avancé</div>
+                <p class="skill-desc">Matplotlib, Seaborn, Plotly, Power BI, R Shiny</p>
+                <div class="skill-progress"><div class="skill-progress-fill" data-fill="0.90"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-calculator"></i></div>
+                <h4 class="skill-title">Statistiques</h4>
+                <div class="skill-badge">Avancé</div>
+                <p class="skill-desc">Tests d'hypothèse, Analyse de régression, Inférence</p>
+                <div class="skill-progress"><div class="skill-progress-fill" data-fill="0.88"></div></div>
+            </div>
+        </div>
+
+        <h3 class="skills-subtitle">Outils & Technologies</h3>
+        <div class="skills-cards-grid">
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                <h4 class="skill-title">Git & GitHub</h4>
+                <div class="skill-badge">Intermédiaire</div>
+                <p class="skill-desc">Gestion de version, collaboration</p>
+                <div class="skill-progress"><div class="skill-progress-fill" data-fill="0.65"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                <h4 class="skill-title">Cloud Computing</h4>
+                <div class="skill-badge">Débutant</div>
+                <p class="skill-desc">AWS, Google Cloud Platform</p>
+                <div class="skill-progress"><div class="skill-progress-fill" data-fill="0.35"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-server"></i></div>
+                <h4 class="skill-title">Big Data</h4>
+                <div class="skill-badge">Intermédiaire</div>
+                <p class="skill-desc">Hadoop, Spark, MongoDB</p>
+                <div class="skill-progress"><div class="skill-progress-fill" data-fill="0.55"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROJETS ===================== -->
+		<section id="projets" class="section">
+			<h2 class="section-title"><span>Projets</span></h2>
+
+			<div class="project-card">
+		<div class="project-content">
+			<h3>Valorisation des données : Data Quality CRM & Pilotage Redmine</h3>
+			<div class="project-tags">
+				<span class="tag">Power BI</span>
+				<span class="tag">DAX</span>
+				<span class="tag">Azure Synapse</span>
+				<span class="tag">Azure DevOps</span>
+				<span class="tag">Salesforce</span>
+				<span class="tag">Jaro-Winkler</span>
+			</div>
+
+			<section class="rounded-block">
+				<h4>Aperçu du projet</h4>
+				<div class="video-container">
+					<video controls width="100%">
+						<source src="Videos/projet1-demo.mp4" type="video/mp4">
+						Votre navigateur ne supporte pas la lecture de vidéos.
+					</video>
+				</div>
+			</section>
+
+			<p>
+				<strong>Contexte :</strong> Stage de fin de BUT Sciences des Données au sein de l'équipe Data de HERIGE Industries / ATLANTEM. Les missions s'inscrivent dans le programme transverse DATA'LIB, qui structure et valorise les données du groupe sur Microsoft Azure.<br>
+				<strong>Objectif :</strong> Produire deux tableaux de bord Power BI opérationnels — l'un pour fiabiliser la base de contacts Salesforce, l'autre pour piloter l'activité informatique via Redmine.
+			</p>
+			<ul>
+				<li>Détection automatique des doublons sur 24 000 contacts via l'algorithme Jaro-Winkler (seuil 0,95) — 4 méthodes de détection consolidées dans une table Gold unique</li>
+				<li>Classification des doublons en 4 niveaux d'arbitrage et enrichissement avec le contexte commercial (propriétaire, région, DAS) pour orienter les actions de correction</li>
+				<li>Conception du modèle dimensionnel Redmine de la V1 (multi-étoiles) à la V2 (constellation) — rédaction des wikis Silver et Gold sur Azure DevOps</li>
+			</ul>
+			<p><strong>Résultat :</strong> Tableau de bord Data Quality mis en production — 18% de doublons et 1 849 faux contacts identifiés sur la base active. Rapport Redmine 8 pages livré et validé par le RSI, couvrant l'ensemble des indicateurs demandés.</p>
+
+			<details class="sae-details">
+				<summary><b>Compétences mobilisées</b></summary>
+				<ul>
+					<li>Modélisation dimensionnelle — schéma en constellation (V1 → V2)</li>
+					<li>DAX avancé — SWITCH, USERELATIONSHIP, colonnes calculées</li>
+					<li>Conception du modèle de données Silver et Gold sur Azure Synapse</li>
+					<li>Rédaction de spécifications techniques — wikis et User Stories Azure DevOps</li>
+					<li>Méthode agile SCRUMBAN — daily, backlog, cycles de 3 semaines</li>
+				</ul>
+			</details>
+			<div class="project-links">
+				<a href="#" class="btn project-btn" target="_blank">Voir le projet</a>
+			</div>
+		</div>
+	</div>
+
+        <!-- Projet 2 — Placeholder -->
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Migration de données vers ou depuis un environnement NoSQL</h3>
+
+                <div class="project-tags">
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">Neo4j</span>
+                    <span class="tag">Big Data</span>
+                </div>
+
+                <section class="rounded-block">
+                    <h4>Aperçu du projet</h4>
+                    <div class="image-slider">
+                        <button class="prev" aria-label="Précédent">❮</button>
+                        <div class="slides">
+                            <div class="slide" style="display:block;">
+                                <img src="Images/projet2-1.jpg" alt="[Description image 1]">
+                                <p>[Description de l'image 1]</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/projet2-2.jpg" alt="[Description image 2]">
+                                <p>[Description de l'image 2]</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/projet2-3.jpg" alt="[Description image 3]">
+                                <p>[Description de l'image 3]</p>
+                            </div>
+                        </div>
+                        <button class="next" aria-label="Suivant">❯</button>
+                    </div>
+                </section>
+
+                <p>
+                    <strong>Contexte :</strong> [Description du contexte du projet]<br>
+                    <strong>Défi :</strong> [Défi principal à relever]
+                </p>
+                <ul>
+                    <li>[Aspect technique 1]</li>
+                    <li>[Aspect technique 2]</li>
+                    <li>[Aspect technique 3]</li>
+                </ul>
+                <p><strong>Solution :</strong> [Solution développée et méthodologie]</p>
+
+                <details class="sae-details">
+                    <summary><b>Technologies et compétences</b></summary>
+                    <ul>
+                        <li>Bases de données NoSQL (MongoDB, Neo4j)</li>
+                        <li>Big Data — enjeux stockage et extraction</li>
+                        <li>Méthodes statistiques pour la Big Data</li>
+                        <li>Développement web (Flask, Streamlit, Dash)</li>
+                    </ul>
+                </details>
+                <div class="project-links">
+                    <a href="#" class="btn project-btn" target="_blank">Découvrir le projet</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projet 3 — Agent IA Orange Maroc -->
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Agent IA pour le Support des Points de Vente Orange Maroc</h3>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Flask</span>
+                    <span class="tag">Web Scraping</span>
+                    <span class="tag">LLM (OpenAI/Gemini)</span>
+                    <span class="tag">IA Générative</span>
+                </div>
+
+                <section class="rounded-block">
+                    <h4>Démo interactive de l'agent IA</h4>
+                    <div class="image-slider">
+                        <button class="prev" aria-label="Précédent">❮</button>
+                        <div class="slides">
+                            <div class="slide" style="display:block;">
+                                <img src="Images/AgentInterface.jpg" alt="Interface agent IA">
+                                <p>Accueil de l'agent IA et suggestion de questions</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/AgentAI2.jpg" alt="Discussion agent IA">
+                                <p>Réponse intelligente et conversation avec l'agent</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/SVGTOPNG.jpg" alt="Conversion SVG en PNG">
+                                <p>Conversion automatisée d'images pour l'OCR</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/AnalyseImageAVEAPIgemini.jpg" alt="Analyse image API Gemini">
+                                <p>Extraction de texte via Gemini API</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/Comparaison1.jpg" alt="Comparaison offres 1">
+                                <p>Comparaison interactive des offres opérateurs (vue 1)</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/comparaison2.jpg" alt="Comparaison offres 2">
+                                <p>Comparaison interactive des offres opérateurs (vue 2)</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/Prompt.png.jpg" alt="Prompt LLM">
+                                <p>Prompt sur-mesure pour le LLM (Gemini/OpenAI)</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/SCRAPACESSOIRESIAM.jpg" alt="Scraping IAM">
+                                <p>Scraping d'accessoires sur le site IAM</p>
+                            </div>
+                        </div>
+                        <button class="next" aria-label="Suivant">❯</button>
+                    </div>
+                </section>
+
+                <p>
+                    Ce projet dote les points de vente Orange Maroc d'un <b>agent IA</b> capable de répondre aux questions des conseillers et clients sur les offres, tarifs, recharges, etc., grâce à l'intelligence artificielle.
+                </p>
+                <ul>
+                    <li><b>Scraping :</b> Extraction automatisée des offres (mobiles, recharges, fibre, ADSL) sur les sites concurrents</li>
+                    <li><b>Traitement :</b> Nettoyage, normalisation et enrichissement des données commerciales</li>
+                    <li><b>Web App :</b> Interface Flask intuitive avec moteur de recherche</li>
+                    <li><b>IA & LLM :</b> Génération de réponses précises et multilingues via API OpenAI/Gemini</li>
+                    <li><b>Comparatif :</b> Mise à jour continue des prix et promotions du marché</li>
+                </ul>
+
+                <details class="sae-details">
+                    <summary><b>Compétences mobilisées</b></summary>
+                    <ul>
+                        <li>Scraping avancé & automatisation Python</li>
+                        <li>Gestion et structuration de bases de données</li>
+                        <li>Développement web (Flask, HTML, CSS, JS)</li>
+                        <li>Intégration d'API IA (OpenAI, Gemini)</li>
+                        <li>Exploration & visualisation des données</li>
+                        <li>Gestion de projet</li>
+                    </ul>
+                </details>
+            </div>
+        </div>
+
+        <!-- Projet 4 — Vélos -->
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Solution décisionnelle pour le suivi des stations de vélos</h3>
+                <span class="project-date">Janv.–Mars 2025 · Data Engineer</span>
+                <div class="project-tags">
+                    <span class="tag">Talend</span>
+                    <span class="tag">Power BI</span>
+                    <span class="tag">ETL</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Data Engineering</span>
+                </div>
+
+                <section class="rounded-block">
+                    <h4>Tableau de Bord Power BI</h4>
+                    <div class="image-slider">
+                        <button class="prev" aria-label="Précédent">❮</button>
+                        <div class="slides">
+                            <div class="slide" style="display:block;">
+                                <img src="Images/DEV6.png" alt="Top 5 stations">
+                                <p>Top 5 de l'utilisation des stations (Marseille/Nantes)</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/DEV7.png" alt="Vue globale Marseille">
+                                <p>Carte des stations actives — Marseille</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/DEV8.png" alt="Analyse météo">
+                                <p>Comparaison des variables météo — Nantes vs Marseille</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/DEV9.png" alt="Vent et vélos">
+                                <p>Analyse de l'influence du vent sur l'utilisation des vélos</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/DEV10.png" alt="Variables météo">
+                                <p>Exploration des variables météorologiques</p>
+                            </div>
+                        </div>
+                        <button class="next" aria-label="Suivant">❯</button>
+                    </div>
+                </section>
+
+                <section class="rounded-block">
+                    <h4>Pipelines ETL sous Talend</h4>
+                    <div class="image-slider">
+                        <button class="prev" aria-label="Précédent">❮</button>
+                        <div class="slides">
+                            <div class="slide" style="display:block;">
+                                <img src="Images/DEV1.png" alt="ETL Calendrier">
+                                <p>Création de la table Calendrier (Job A)</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/DEV2.png" alt="ETL Météo">
+                                <p>Récupération et intégration des données météorologiques (Job B)</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/DEV3.png" alt="ETL Stations">
+                                <p>Création et intégration de la table Stations de vélos (Job C)</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/DEV4.png" alt="Données journalières">
+                                <p>Ajout de données journalières à la table de faits (Job D)</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/DEV5.png" alt="Orchestration ETL">
+                                <p>Orchestration complète de l'ETL (Job E)</p>
+                            </div>
+                        </div>
+                        <button class="next" aria-label="Suivant">❯</button>
+                    </div>
+                </section>
+
+                <p>
+                    <strong>Contexte :</strong> Conception d'une solution de suivi en temps réel de la fréquentation des stations de vélos à <b>Marseille</b> et <b>Nantes</b>.<br>
+                    <strong>Sources :</strong> Données temps réel AMP Métropole & Nantes Métropole, météo France.
+                </p>
+                <ul>
+                    <li>Indicateurs de fréquentation, utilisation, capacité par ville et par période</li>
+                    <li>Analyse de l'influence de la météo sur l'utilisation des vélos</li>
+                    <li>Visualisation cartographique et synthèse dynamique Power BI</li>
+                </ul>
+                <p><strong>Résultat :</strong> Un <b>tableau de bord interactif</b> facilitant la prise de décision pour la gestion des vélos en libre service.</p>
+
+                <details class="sae-details">
+                    <summary><b>Compétences du BUT mobilisées</b></summary>
+                    <ul>
+                        <li>Collecte et intégration de données multi-sources</li>
+                        <li>Automatisation (ETL Talend)</li>
+                        <li>Reporting et Data Visualisation (Power BI)</li>
+                        <li>Analyse statistique et croisement de variables</li>
+                        <li>Restitution de résultats et accompagnement à la décision</li>
+                    </ul>
+                </details>
+            </div>
+        </div>
+
+        <!-- Projet 5 — R Shiny Criminalité -->
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Analyse de la criminalité aux États-Unis avec R Shiny</h3>
+                <div class="project-tags">
+                    <span class="tag">R Shiny</span>
+                    <span class="tag">DataViz</span>
+                    <span class="tag">ACP/AFC</span>
+                    <span class="tag">Statistiques</span>
+                </div>
+
+                <section class="rounded-block">
+                    <h4>Présentation interactive de l'application</h4>
+                    <div class="image-slider">
+                        <button class="prev" aria-label="Précédent">❮</button>
+                        <div class="slides">
+                            <div class="slide" style="display:block;">
+                                <img src="Images/App1.png" alt="ACP">
+                                <p>ACP — Contribution des variables</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/APP2.png" alt="Tableau des données">
+                                <p>Exploration du jeu de données complet</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/APP3.png" alt="Résumé statistique">
+                                <p>Résumé statistique interactif</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/APP4.png" alt="Analyse univariée">
+                                <p>Boxplots & Histogrammes dynamiques</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/App5.PNG" alt="Corrélation">
+                                <p>Matrice de corrélation</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/App6.png" alt="Cartographie">
+                                <p>Carte choroplèthe interactive</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/APP7.jpg" alt="Tableau centré réduit">
+                                <p>Tableau centré et réduit</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/App8.png.jpg" alt="Projection PCA">
+                                <p>Projection des individus & variables (PCA)</p>
+                            </div>
+                        </div>
+                        <button class="next" aria-label="Suivant">❯</button>
+                    </div>
+                </section>
+
+                <p>
+                    Ce projet explore les taux de criminalité aux États-Unis à partir de données publiques.
+                </p>
+                <ul>
+                    <li><b>Automatisation :</b> Importation, nettoyage et structuration des données</li>
+                    <li><b>Visualisation :</b> Graphiques dynamiques et cartes choroplèthes interactives</li>
+                    <li><b>Filtres avancés :</b> Exploration par type de crime, localisation, variables socio-économiques</li>
+                    <li><b>Modélisation :</b> Analyse de corrélations, ACP, AFC multivarié</li>
+                </ul>
+
+                <details class="sae-details">
+                    <summary><b>Compétences mobilisées</b></summary>
+                    <ul>
+                        <li>Traitement & automatisation des données</li>
+                        <li>Exploration & visualisation avancées</li>
+                        <li>Modélisation statistique</li>
+                        <li>Développement d'outils interactifs R Shiny</li>
+                        <li>Gestion de projet en équipe</li>
+                    </ul>
+                </details>
+                <div class="project-links">
+                    <a href="https://anas-ibnouali.shinyapps.io/Ibnou_Anas/" class="btn project-btn" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Voir l'application
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projet 6 — EPSM -->
+        <div class="project-card">
+            <div class="project-content">
+                <section class="rounded-block">
+                    <h4>Aperçu du tableau de bord EPSM</h4>
+                    <div class="image-slider">
+                        <button class="prev" aria-label="Précédent">❮</button>
+                        <div class="slides">
+                            <div class="slide" style="display:block;">
+                                <img src="Images/EPSM1.png" alt="Menu principal">
+                                <p>Menu principal</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/EPSM2.png" alt="Activité globale">
+                                <p>Activité globale</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/EPSM3.png" alt="Ambulatoire">
+                                <p>Activité Ambulatoire</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/EPSM4.png" alt="Séquence 1">
+                                <p>Séquence hospitalière 1</p>
+                            </div>
+                            <div class="slide" style="display:none;">
+                                <img src="Images/EPSM5.png" alt="Séquence 2">
+                                <p>Séquence hospitalière 2</p>
+                            </div>
+                        </div>
+                        <button class="next" aria-label="Suivant">❯</button>
+                    </div>
+                </section>
+
+                <h3>Référent Technique Data · EPSM Sud Bretagne (Projet tutoré)</h3>
+                <span class="project-date">Janv.–Juin 2024 · Référent Technique Data</span>
+                <div class="project-tags">
+                    <span class="tag">Excel VBA</span>
+                    <span class="tag">Power Pivot</span>
+                    <span class="tag">DAX</span>
+                    <span class="tag">Automatisation</span>
+                    <span class="tag">Projet Tutoré</span>
+                </div>
+
+                <p>
+                    Dans le cadre du BUT Science des Données, nous avons mené un projet d'automatisation de la gestion et de l'analyse des données pour l'EPSM Sud Bretagne.
+                    L'objectif : concevoir un <strong>tableau de bord interactif</strong> assurant le suivi automatisé de l'activité clinique et administrative.
+                </p>
+                <ul>
+                    <li>Collecte et structuration des données à partir de fichiers volumineux, nettoyage et dictionnaire de données</li>
+                    <li>Automatisation via VBA et Power Query pour fiabilité et rapidité</li>
+                    <li>Analyse exploratoire et visualisation via Power Pivot, DAX et Excel</li>
+                    <li>Interface ergonomique pour la prise de décision avec visualisations dynamiques</li>
+                </ul>
+
+                <details class="sae-details">
+                    <summary><b>Compétences du BUT mobilisées</b></summary>
+                    <ul>
+                        <li>Maîtrise de la syntaxe et des langages (DAX, VBA)</li>
+                        <li>Mise en évidence des résultats clés via indicateurs pertinents</li>
+                        <li>Reporting et Data Visualisation</li>
+                        <li>Statistique descriptive et inférentielle</li>
+                        <li>Programmation statistique</li>
+                    </ul>
+                </details>
+            </div>
+        </div>
+
+        <div class="more-projects">
+            <a href="https://github.com/anasibnouali" class="btn more-projects-btn" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> Voir plus de projets sur GitHub
+            </a>
+        </div>
+    </section>
+
+    <!-- ===================== BLOG ===================== -->
+    <section id="blog" class="section">
+        <h2 class="section-title"><span>Blog</span></h2>
+        <div class="blog-posts">
+            <a class="blog-post" href="https://www.data-major.com/fr/blog-tendances-data-2025/" target="_blank" rel="noopener noreferrer">
+                <div class="blog-img">
+                    <img src="Images/Tendances1.png" alt="Tendances Data Science 2025">
+                    <div class="blog-date">
+                        <span class="day">15</span>
+                        <span class="month">Mars</span>
+                        <span class="year">2025</span>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <h3>Les tendances de la Data Science en 2025</h3>
+                    <p>Découvrez les dernières tendances en matière de data science, machine learning et IA qui façonneront l'année à venir.</p>
+                    <div class="blog-tags">
+                        <span class="tag">AI</span>
+                        <span class="tag">Tendances</span>
+                        <span class="tag">Innovation</span>
+                    </div>
+                    <span class="read-more">Lire l'article <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a class="blog-post" href="https://www.apting.fr/formation/mettre-en-oeuvre-un-projet-machine-learning-de-a-a-z/" target="_blank" rel="noopener noreferrer">
+                <div class="blog-img">
+                    <img src="Images/ML.png" alt="Réussir un projet ML">
+                    <div class="blog-date">
+                        <span class="day">28</span>
+                        <span class="month">Fév</span>
+                        <span class="year">2025</span>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <h3>Comment réussir un projet de Machine Learning</h3>
+                    <p>Un guide étape par étape pour mener à bien vos projets de machine learning, de la collecte des données à la mise en production.</p>
+                    <div class="blog-tags">
+                        <span class="tag">Guide</span>
+                        <span class="tag">ML</span>
+                        <span class="tag">Bonnes pratiques</span>
+                    </div>
+                    <span class="read-more">Lire l'article <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a class="blog-post" href="https://www.kdnuggets.com/10-advanced-python-tricks-data-scientists" target="_blank" rel="noopener noreferrer">
+                <div class="blog-img">
+                    <img src="Images/Tips.png" alt="Astuces Python">
+                    <div class="blog-date">
+                        <span class="day">10</span>
+                        <span class="month">Jan</span>
+                        <span class="year">2025</span>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <h3>10 astuces Python pour Data Scientists</h3>
+                    <p>Découvrez des techniques avancées en Python pour améliorer l'efficacité de votre code et optimiser vos analyses de données.</p>
+                    <div class="blog-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Astuces</span>
+                        <span class="tag">Productivité</span>
+                    </div>
+                    <span class="read-more">Lire l'article <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </a>
+        </div>
+
+        <div class="blog-cta">
+            <a href="https://github.com/anasibnouali" class="btn blog-btn" target="_blank" rel="noopener">
+                Voir tous mes projets <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section">
+        <h2 class="section-title"><span>Contact</span></h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact-detail">
+                        <h3>Localisation</h3>
+                        <p>Vannes, Bretagne, France</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-detail">
+                        <h3>Email</h3>
+                        <p><a href="mailto:anasibnouali2018@gmail.com">anasibnouali2018@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <div class="contact-detail">
+                        <h3>Téléphone</h3>
+                        <p><a href="tel:+33610234756">06 10 23 47 56</a></p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                    <div class="contact-detail">
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/in/anasibnouali/" target="_blank" rel="noopener">anasibnouali</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Envoyez-moi un message</h3>
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn submit-btn">
+                        Envoyer <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-about">
+            <h3>Anas Ibnouali</h3>
+            <p>Data Scientist passionné par la transformation des données en solutions innovantes à fort impact métier.</p>
+            <div class="social-icons">
+                <a href="https://github.com/anasibnouali" class="icon" aria-label="GitHub" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/anasibnouali/" class="icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:anasibnouali2018@gmail.com" class="icon" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-subscribe">
+            <h3>Restez informé</h3>
+            <p>Abonnez-vous pour recevoir mes derniers articles et projets.</p>
+            <form class="subscribe-form">
+                <input type="email" placeholder="Votre email">
+                <button type="submit" class="btn subscribe-btn" aria-label="S'abonner">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Anas Ibnouali. Tous droits réservés.</p>
+        <div class="footer-policy-links">
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Mentions légales</a>
+        </div>
+    </div>
+</footer>
+
+<div class="scroll-top">
+    <button id="scrollTopBtn" title="Retour en haut" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</div>
+
+<!-- Lightbox unique -->
+<div id="img-lightbox" class="img-lightbox">
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Précédent">❮</button>
+    <span class="img-lightbox-close" id="lightboxClose" aria-label="Fermer">&times;</span>
+    <img id="img-lightbox-img" src="" alt="">
+    <p id="img-lightbox-caption"></p>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Suivant">❯</button>
+</div>
+
+</body>
+</html>
