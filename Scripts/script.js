@@ -5,17 +5,41 @@ let currentLightboxIndex = 0;
 
 // ===================== INIT =====================
 document.addEventListener('DOMContentLoaded', function () {
+    initializeTheme();
     initializeNavbar();
     initializeScrollToTop();
     initializeSliders();
     initializeLightbox();
     initializeContactForm();
+    initializeCharCounter();
     initializeScrollAnimations();
     initializeTypingEffect();
     initializeCounters();
     initializeSkillBars();
     registerServiceWorker();
 });
+
+// ===================== THEME TOGGLE =====================
+function initializeTheme() {
+    const saved = localStorage.getItem('theme') || 'dark';
+    applyTheme(saved);
+
+    const toggle = document.getElementById('themeToggle');
+    if (toggle) {
+        toggle.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme') || 'dark';
+            const next = current === 'dark' ? 'light' : 'dark';
+            applyTheme(next);
+            localStorage.setItem('theme', next);
+        });
+    }
+}
+
+function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    const icon = document.getElementById('themeIcon');
+    if (icon) icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+}
 
 // ===================== NAVBAR =====================
 function initializeNavbar() {
@@ -240,6 +264,19 @@ function showNotification(message, type = 'info') {
     document.body.appendChild(notif);
     notif.querySelector('.notif-close').addEventListener('click', () => notif.remove());
     setTimeout(() => { if (notif.parentNode) notif.remove(); }, 5000);
+}
+
+// ===================== CHAR COUNTER =====================
+function initializeCharCounter() {
+    const textarea = document.getElementById('message');
+    const counter = document.getElementById('charCount');
+    if (!textarea || !counter) return;
+
+    textarea.addEventListener('input', () => {
+        const len = textarea.value.length;
+        counter.textContent = len;
+        counter.className = len > 900 ? 'danger' : len > 700 ? 'warn' : '';
+    });
 }
 
 // ===================== SCROLL ANIMATIONS =====================
